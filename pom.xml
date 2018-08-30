@@ -4,75 +4,108 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>test</artifactId>
+    <modules>
+        <module>java-web</module>
+        <module>java-web-test</module>
+    </modules>
     <groupId>com.wyb</groupId>
     <version>1.0.0</version>
 
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+    </parent>
+
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.compiler.source>1.8</project.build.compiler.source>
+        <project.build.compiler.target>1.8</project.build.compiler.target>
+        <project.build.compiler.encoding>UTF-8</project.build.compiler.encoding>
+
+        <!-- Docker -->
+        <docker.plugin.version>0.4.13</docker.plugin.version>
+        <docker.client.version>8.9.0</docker.client.version>
+        <docker.image.prefix>registry.ib2000.net:50001/</docker.image.prefix>
+        <docker.image.name>${artifactId}</docker.image.name>
+        <docker.image.tag>${version}</docker.image.tag>
+        <docker.host>http://172.16.10.252:2375</docker.host>
+
+        <lombok.version>1.16.18</lombok.version>
     </properties>
 
     <dependencies>
-        <!-- Servlet -->
+
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
 
-        <!-- Jsp -->
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.2</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- Jstl -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-            <scope>runtime</scope>
-        </dependency>
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
-            <!-- Compile -->
+            <!-- Spring Boot Plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>${project.build.compiler.source}</source>
+                    <target>${project.build.compiler.target}</target>
+                    <encoding>${project.build.compiler.encoding}</encoding>
                 </configuration>
             </plugin>
 
-            <!-- Test -->
+            <!-- Docker Plugin -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <!--<goal>build</goal>-->
+                            <!--<goal>push</goal>-->
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    <skipTests>true</skipTests>
+                    <dockerHost>${docker.host}</dockerHost>
+                    <imageName>${docker.image.prefix}${docker.image.name}:${docker.image.tag}</imageName>
+                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
                 </configuration>
-            </plugin>
-
-            <!-- Tomcat -->
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <path>/${project.artifactId}</path>
-                </configuration>
-
             </plugin>
         </plugins>
     </build>
+
+
 </project>
