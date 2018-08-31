@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+    function showTime() {
+        $("#showTime").get(0).innerHTML=Date();
+    }
+
+    $(function () {
+        $("#show").click(function () {
+            //$("#showTime").get(0).innerHTML=Date();
+            showTime();
+        });
+    });
+</script>
+
+<h3>我的第一个 jquery 程序</h3>
+
+<p id="showTime"></p>
+
+<button type="button" id="show">显示时间</button>
+
+</body>
+</html>

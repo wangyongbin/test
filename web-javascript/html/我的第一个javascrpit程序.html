@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function showTime() {
+        //document.getElementById("showTime").innerText=Date();
+        document.getElementById("showTime").innerHTML=Date();
+
+
+        /**
+         * 1, innerText 获取标签的文本内容并将标签过滤掉。
+         * 2, innerHtml 获取标签和文本内容。
+         */
+    }
+</script>
+
+<h3>我的第一个 javascript 程序</h3>
+
+<p id="showTime"></p>
+
+<button type="button" onclick="showTime()">显示时间</button>
+
+</body>
+</html>
