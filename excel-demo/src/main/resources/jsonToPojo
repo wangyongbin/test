@@ -1,0 +1,280 @@
+package ;
+public class Req_params {
+private String param1;
+
+private String param2;
+
+public void setParam1(String param1){
+this.param1 = param1;
+}
+public String getParam1(){
+return this.param1;
+}
+public void setParam2(String param2){
+this.param2 = param2;
+}
+public String getParam2(){
+return this.param2;
+}
+
+}
+=================================
+
+package ;
+public class Titile {
+private String row_index;
+
+private String cell_index;
+
+private String title_experssion;
+
+private boolean check_title;
+
+public void setRow_index(String row_index){
+this.row_index = row_index;
+}
+public String getRow_index(){
+return this.row_index;
+}
+public void setCell_index(String cell_index){
+this.cell_index = cell_index;
+}
+public String getCell_index(){
+return this.cell_index;
+}
+public void setTitle_experssion(String title_experssion){
+this.title_experssion = title_experssion;
+}
+public String getTitle_experssion(){
+return this.title_experssion;
+}
+public void setCheck_title(boolean check_title){
+this.check_title = check_title;
+}
+public boolean getCheck_title(){
+return this.check_title;
+}
+
+}
+=================================
+
+package ;
+public class Cell_names {
+
+}
+=================================
+
+package ;
+import java.util.List;
+public class Head {
+private String row_index;
+
+private String cell_start_index;
+
+private String cell_end_index;
+
+private List<String> cell_names ;
+
+private boolean check_head;
+
+public void setRow_index(String row_index){
+this.row_index = row_index;
+}
+public String getRow_index(){
+return this.row_index;
+}
+public void setCell_start_index(String cell_start_index){
+this.cell_start_index = cell_start_index;
+}
+public String getCell_start_index(){
+return this.cell_start_index;
+}
+public void setCell_end_index(String cell_end_index){
+this.cell_end_index = cell_end_index;
+}
+public String getCell_end_index(){
+return this.cell_end_index;
+}
+public void setString(List<String> cell_names){
+this.cell_names = cell_names;
+}
+public List<String> getString(){
+return this.cell_names;
+}
+public void setCheck_head(boolean check_head){
+this.check_head = check_head;
+}
+public boolean getCheck_head(){
+return this.check_head;
+}
+
+}
+=================================
+
+package ;
+public class Cloumns {
+private int username;
+
+private int password;
+
+public void setUsername(int username){
+this.username = username;
+}
+public int getUsername(){
+return this.username;
+}
+public void setPassword(int password){
+this.password = password;
+}
+public int getPassword(){
+return this.password;
+}
+
+}
+=================================
+
+package ;
+public class Data {
+private String row_start_index;
+
+private String row_end_index;
+
+private String cell_start_index;
+
+private String cell_end_index;
+
+private Cloumns cloumns;
+
+public void setRow_start_index(String row_start_index){
+this.row_start_index = row_start_index;
+}
+public String getRow_start_index(){
+return this.row_start_index;
+}
+public void setRow_end_index(String row_end_index){
+this.row_end_index = row_end_index;
+}
+public String getRow_end_index(){
+return this.row_end_index;
+}
+public void setCell_start_index(String cell_start_index){
+this.cell_start_index = cell_start_index;
+}
+public String getCell_start_index(){
+return this.cell_start_index;
+}
+public void setCell_end_index(String cell_end_index){
+this.cell_end_index = cell_end_index;
+}
+public String getCell_end_index(){
+return this.cell_end_index;
+}
+public void setCloumns(Cloumns cloumns){
+this.cloumns = cloumns;
+}
+public Cloumns getCloumns(){
+return this.cloumns;
+}
+
+}
+=================================
+
+package ;
+public class Data_area {
+private String tableName;
+
+private Titile titile;
+
+private Head head;
+
+private Data data;
+
+public void setTableName(String tableName){
+this.tableName = tableName;
+}
+public String getTableName(){
+return this.tableName;
+}
+public void setTitile(Titile titile){
+this.titile = titile;
+}
+public Titile getTitile(){
+return this.titile;
+}
+public void setHead(Head head){
+this.head = head;
+}
+public Head getHead(){
+return this.head;
+}
+public void setData(Data data){
+this.data = data;
+}
+public Data getData(){
+return this.data;
+}
+
+}
+=================================
+
+package ;
+import java.util.List;
+public class Sheets {
+private String sheet_title;
+
+private boolean check_title;
+
+private int sheet_index;
+
+private List<Data_area> data_area ;
+
+public void setSheet_title(String sheet_title){
+this.sheet_title = sheet_title;
+}
+public String getSheet_title(){
+return this.sheet_title;
+}
+public void setCheck_title(boolean check_title){
+this.check_title = check_title;
+}
+public boolean getCheck_title(){
+return this.check_title;
+}
+public void setSheet_index(int sheet_index){
+this.sheet_index = sheet_index;
+}
+public int getSheet_index(){
+return this.sheet_index;
+}
+public void setData_area(List<Data_area> data_area){
+this.data_area = data_area;
+}
+public List<Data_area> getData_area(){
+return this.data_area;
+}
+
+}
+=================================
+
+package ;
+import java.util.List;
+public class Root {
+private Req_params req_params;
+
+private List<Sheets> sheets ;
+
+public void setReq_params(Req_params req_params){
+this.req_params = req_params;
+}
+public Req_params getReq_params(){
+return this.req_params;
+}
+public void setSheets(List<Sheets> sheets){
+this.sheets = sheets;
+}
+public List<Sheets> getSheets(){
+return this.sheets;
+}
+
+}
+

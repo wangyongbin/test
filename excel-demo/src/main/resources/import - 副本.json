@@ -1,0 +1,67 @@
+{
+
+  //请求参数映射。keu内部引用标识，当指定column映射时，可以通过req_params.<key>获取value，该value为请求参数的key
+  req_params:{
+    param1:"req_param_name",
+    param2:"req_param_name"
+
+  },
+  //sheet定义，sheet为数组
+  sheets:[
+    {
+      //sheet 标题
+      sheet_title:"",
+      //是否检查匹配
+      check_title:true,
+      //数据区，数组
+      data_area:[
+        {
+          //数据区对应的表名称
+          tableName:"tableName",
+          //数据区标题
+          titile:{
+            //位置信息
+            row_index:"1",
+            cell_index:"1"
+            //标题表达式
+            title_experssion:"",
+            //标题是否检查
+            check_title:false
+          },
+          //头信息
+          head:{
+            //位置信息
+            row_index:"1",
+            cell_start_index:"1",
+            cell_end_index:"7",
+            //头信息列表
+            cell_names:[
+              "cell1","cell2","cell3"
+            ],
+            //是否检查头
+            check_head:false
+          },
+          //数据
+          data:{
+            //位置信息
+            row_start_index:"3",
+            row_end_index:"9",
+            cell_start_index:"1",
+            cell_end_index:"7",
+            //列映射，key为物理表的列，value为对应的值，可以是索引，可以是请求参数，可是是常量
+            cloumns:{
+              //索引
+              columnA:1,
+              //常量值
+              columnB:"CONST_VALUE",
+              //请求参数
+              columnC:"req_params.param1",
+              //所有列
+            }
+          }
+        },
+        // 所有数据区
+      ]
+    }
+  ]
+}

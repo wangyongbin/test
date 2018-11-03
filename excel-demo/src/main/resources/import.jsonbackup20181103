@@ -1,0 +1,44 @@
+{
+  "req_params":{
+    "param1":"req_param_name",
+    "param2":"req_param_name"
+  },
+  "sheets":[
+    {
+      "sheet_title": "Excel测试表格",
+      "check_title": true,
+      "sheet_index": 0,
+      "data_area": [
+        {
+          "tableName": "user",
+          "titile": {
+            "row_index": "1",
+            "cell_index": "1",
+            "title_experssion": "",
+            "check_title": false
+          },
+          "head": {
+            "row_index": "2",
+            "cell_start_index": "1",
+            "cell_end_index": "2",
+            "cell_names": [
+              "用户名",
+              "用户密码"
+            ],
+            "check_head": false
+          },
+          "data": {
+            "row_start_index": "3",
+            "row_end_index": "11",
+            "cell_start_index": "1",
+            "cell_end_index": "2",
+            "cloumns": {
+              "username": 1,
+              "password": 2
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
