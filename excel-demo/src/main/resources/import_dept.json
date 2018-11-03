@@ -1,0 +1,553 @@
+{
+  "reqParams":{
+    "param1":"req_param_name",
+    "param2":"req_param_name"
+  },
+  "sheets":[
+    {
+      "sheetTitle": "部门经济指标（收入、到款、新签）完成情况",
+      "checkTitle": false,
+      "sheetIndex": 1,
+      "dataArea": [
+        {//第一个数据区
+          "tableName": "biDeptCompleteDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门A",    //部门名称
+              "typeName": "收入",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 1,        //月份
+              "yearTarget": 2,        //年度目标值
+              "completeVal": 3,       //本月完成值
+              "completeSumVal": 4,    //本月累计完成值
+              "completeRate": 5,      //完成率
+              "lastYearVal": 6,       //去年同期
+              "lastYearIncreaseRate":7  //同比增减
+            }
+          }
+        },
+        {//第2个数据区
+          "tableName": "biDeptCompleteDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 9,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 9,
+            "cellEndIndex": 15,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门A",    //部门名称
+              "typeName": "新签",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 9,        //月份
+              "yearTarget": 10,        //年度目标值
+              "completeVal": 11,       //本月完成值
+              "completeSumVal": 12,    //本月累计完成值
+              "completeRate": 13,      //完成率
+              "lastYearVal": 14,       //去年同期
+              "lastYearIncreaseRate":15  //同比增减
+            }
+          }
+        },
+        {//第3个数据区
+          "tableName": "biDeptCompleteDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 17,
+            "cellEndIndex": 23,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 17,
+            "cellEndIndex": 23,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门A",    //部门名称
+              "typeName": "到款",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 17,        //月份
+              "yearTarget": 18,        //年度目标值
+              "completeVal": 19,       //本月完成值
+              "completeSumVal": 20,    //本月累计完成值
+              "completeRate": 21,      //完成率
+              "lastYearVal": 22,       //去年同期
+              "lastYearIncreaseRate":23  //同比增减
+            }
+          }
+        },
+        {//第4个数据区
+          "tableName": "biDeptCompleteDetail",
+          "title": {
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 15,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 16,
+            "rowEndIndex": 25,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门B",    //部门名称
+              "typeName": "收入",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 1,        //月份
+              "yearTarget": 2,        //年度目标值
+              "completeVal": 3,       //本月完成值
+              "completeSumVal": 4,    //本月累计完成值
+              "completeRate": 5,      //完成率
+              "lastYearVal": 6,       //去年同期
+              "lastYearIncreaseRate":7  //同比增减
+            }
+          }
+        },
+        {//第5个数据区
+          "tableName": "biDeptCompleteDetail",
+          "title": {
+            "rowIndex": 14,
+            "cellIndex": 9,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 15,
+            "cellStartIndex": 9,
+            "cellEndIndex": 15,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 16,
+            "rowEndIndex": 25,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门B",    //部门名称
+              "typeName": "新签",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 9,        //月份
+              "yearTarget": 10,        //年度目标值
+              "completeVal": 11,       //本月完成值
+              "completeSumVal": 12,    //本月累计完成值
+              "completeRate": 13,      //完成率
+              "lastYearVal": 14,       //去年同期
+              "lastYearIncreaseRate":15  //同比增减
+            }
+          }
+        },
+        {//第6个数据区
+          "tableName": "biDeptCompleteDetail",
+          "title": {
+            "rowIndex": 14,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 15,
+            "cellStartIndex": 17,
+            "cellEndIndex": 23,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 16,
+            "rowEndIndex": 23,
+            "cellStartIndex": 17,
+            "cellEndIndex": 23,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门B",    //部门名称
+              "typeName": "到款",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 17,        //月份
+              "yearTarget": 18,        //年度目标值
+              "completeVal": 19,       //本月完成值
+              "completeSumVal": 20,    //本月累计完成值
+              "completeRate": 21,      //完成率
+              "lastYearVal": 22,       //去年同期
+              "lastYearIncreaseRate":23  //同比增减
+            }
+          }
+        }
+      ]
+    },
+    {
+      "sheetTitle": "部门成本完成情况",
+      "checkTitle": false,
+      "sheetIndex": 2,
+      "dataArea": [
+        {//第一个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 1,
+            "cellEndIndex": 5,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 1,
+            "cellEndIndex": 5,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门A",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 1,        //月份
+              "yearTarget": 2,        //年度目标值
+              "execVal": 3,       //本月发生值
+              "execSumVal": 4,    //本月累计值
+              "execSumRate": 5       //本月累计发生率
+            }
+          }
+        },
+        {//第2个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 7,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 7,
+            "cellEndIndex": 11,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 7,
+            "cellEndIndex": 11,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门B",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 7,        //月份
+              "yearTarget": 8,        //年度目标值
+              "execVal": 9,       //本月发生值
+              "execSumVal": 10,    //本月累计值
+              "execSumRate": 11       //本月累计发生率
+            }
+          }
+        },
+        {//第3个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 13,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 13,
+            "cellEndIndex": 17,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 13,
+            "cellEndIndex": 17,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门C",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 13,        //月份
+              "yearTarget": 14,        //年度目标值
+              "execVal": 15,       //本月发生值
+              "execSumVal": 16,    //本月累计值
+              "execSumRate": 17       //本月累计发生率
+            }
+          }
+        },
+        {//第4个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 19,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 19,
+            "cellEndIndex": 23,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 19,
+            "cellEndIndex": 23,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门D",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 19,        //月份
+              "yearTarget": 20,        //年度目标值
+              "execVal": 21,       //本月发生值
+              "execSumVal": 22,    //本月累计值
+              "execSumRate": 23       //本月累计发生率
+            }
+          }
+        },
+        {//第5个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 15,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 16,
+            "cellStartIndex": 1,
+            "cellEndIndex": 5,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 17,
+            "rowEndIndex": 26,
+            "cellStartIndex": 1,
+            "cellEndIndex": 5,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门E",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 1,        //月份
+              "yearTarget": 2,        //年度目标值
+              "execVal": 3,       //本月发生值
+              "execSumVal": 4,    //本月累计值
+              "execSumRate": 5       //本月累计发生率
+            }
+          }
+        },
+        {//第6个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 15,
+            "cellIndex": 7,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 16,
+            "cellStartIndex": 7,
+            "cellEndIndex": 11,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 17,
+            "rowEndIndex": 26,
+            "cellStartIndex": 7,
+            "cellEndIndex": 11,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门F",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 7,        //月份
+              "yearTarget": 8,        //年度目标值
+              "execVal": 9,       //本月发生值
+              "execSumVal": 10,    //本月累计值
+              "execSumRate": 11       //本月累计发生率
+            }
+          }
+        },
+        {//第7个数据区
+          "tableName": "biDeptCostDetail",
+          "title": {
+            "rowIndex": 15,
+            "cellIndex": 13,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 16,
+            "cellStartIndex": 13,
+            "cellEndIndex": 17,
+            "cellNames": [
+              "月份",
+              "年度目标值",
+              "本月发生值",
+              "本月累计值",
+              "本月累计发生率"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 17,
+            "rowEndIndex": 26,
+            "cellStartIndex": 13,
+            "cellEndIndex": 17,
+            "columns": {
+              "countYear": "2017",    //所属年份
+              "deptName": "部门J",    //部门名称
+              "typeName": "成本",     //经济指标
+              "valueUnit": "元",      //金额单位
+              "countMonth": 13,        //月份
+              "yearTarget": 14,        //年度目标值
+              "execVal": 15,       //本月发生值
+              "execSumVal": 16,    //本月累计值
+              "execSumRate": 17       //本月累计发生率
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
