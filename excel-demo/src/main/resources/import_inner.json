@@ -1,0 +1,201 @@
+{
+  "reqParams":{},
+  "sheets":[
+    {
+      "sheetTitle": "收入(到款)",
+      "checkTitle": false,
+      "sheetIndex": 1,
+      "dataArea": [
+        {//第一个数据区
+          "tableName": "biInnerComplete",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 2,
+            "cellEndIndex": 8,
+            "cellNames": [
+              "月份",
+              "内部目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 2,
+            "cellEndIndex": 8,
+            "columns": {
+              "countYear": "2018",    //所属年份
+              "typeName": "收入（到款）",     //经济指标
+              "valueUnit": "万元",      //金额单位
+              "countMonth": 2,        //月份
+              "innerTarget": 3,        //内部目标值
+              "completeVal": 4,       //本月完成值
+              "completeSumVal": 5,    //本月累计完成值
+              "completeRate": 6,      //完成率
+              "lastYearVal": 7,       //去年同期
+              "lastYearIncreaseRate":8  //同比增减
+            }
+          }
+        }
+      ]
+    },
+    {
+      "sheetTitle": "新签",
+      "checkTitle": false,
+      "sheetIndex": 2,
+      "dataArea": [
+        {//第一个数据区
+          "tableName": "biInnerComplete",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 2,
+            "cellEndIndex": 8,
+            "cellNames": [
+              "月份",
+              "内部目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 2,
+            "cellEndIndex": 8,
+            "columns": {
+              "countYear": "2018",    //所属年份
+              "typeName": "新签",     //经济指标
+              "valueUnit": "万元",      //金额单位
+              "countMonth": 2,        //月份
+              "innerTarget": 3,        //内部目标值
+              "completeVal": 4,       //本月完成值
+              "completeSumVal": 5,    //本月累计完成值
+              "completeRate": 6,      //完成率
+              "lastYearVal": 7,       //去年同期
+              "lastYearIncreaseRate":8  //同比增减
+            }
+          }
+        }
+      ]
+    },
+    {
+      "sheetTitle": "利润",
+      "checkTitle": false,
+      "sheetIndex": 3,
+      "dataArea": [
+        {//第一个数据区
+          "tableName": "biInnerComplete",
+          "title": {
+            "rowIndex": 1,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 2,
+            "cellStartIndex": 2,
+            "cellEndIndex": 8,
+            "cellNames": [
+              "月份",
+              "内部目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 3,
+            "rowEndIndex": 12,
+            "cellStartIndex": 2,
+            "cellEndIndex": 8,
+            "columns": {
+              "countYear": "2018",    //所属年份
+              "typeName": "利润",     //经济指标
+              "valueUnit": "万元",      //金额单位
+              "countMonth": 2,        //月份
+              "innerTarget": 3,        //内部目标值
+              "completeVal": 4,       //本月完成值
+              "completeSumVal": 5,    //本月累计完成值
+              "completeRate": 6,      //完成率
+              "lastYearVal": 7,       //去年同期
+              "lastYearIncreaseRate":8  //同比增减
+            }
+          }
+        }
+      ]
+    },
+    {
+      "sheetTitle": "详细经济指标完成情况",
+      "checkTitle": false,
+      "sheetIndex": 4,
+      "dataArea": [
+        {//第一个数据区
+          "tableName": "biInnerComplete",
+          "title": {
+            "rowIndex": 2,
+            "cellIndex": 1,
+            "titleExperssion":"",
+            "checkTitle": false
+          },
+          "head": {
+            "rowIndex": 3,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "cellNames": [
+              "月份",
+              "内部目标值",
+              "本月完成值",
+              "本月累计值",
+              "完成率",
+              "去年同期",
+              "同比增减"
+            ],
+            "checkHead": false
+          },
+          "data": {
+            "rowStartIndex": 4,
+            "rowEndIndex": 6,
+            "cellStartIndex": 1,
+            "cellEndIndex": 7,
+            "columns": {
+              "countYear": "2018",    //所属年份
+              "typeName": 1,     //经济指标
+              "valueUnit": "万元",      //金额单位
+              "countMonth": "12月",        //月份
+              "innerTarget": 2,        //内部目标值
+              "completeVal": 3,       //本月完成值
+              "completeSumVal": 4,    //本月累计完成值
+              "completeRate": 5,      //完成率
+              "lastYearVal": 6,       //去年同期
+              "lastYearIncreaseRate":7  //同比增减
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

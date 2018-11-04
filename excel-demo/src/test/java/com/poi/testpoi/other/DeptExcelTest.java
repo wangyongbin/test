@@ -1,4 +1,4 @@
-package com.poi.testpoi;
+package com.poi.testpoi.other;
 
 import com.alibaba.fastjson.JSON;
 import com.poi.testpoi.common.MyException;

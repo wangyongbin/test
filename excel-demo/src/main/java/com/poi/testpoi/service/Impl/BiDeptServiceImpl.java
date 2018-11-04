@@ -35,7 +35,7 @@ public class BiDeptServiceImpl implements BiDeptService {
 	@Autowired
 	private BiDeptCostDetailRepository biDeptCostDetailRepository;
 
-	//@Transactional(readOnly = false,rollbackFor = Exception.class)
+	@Transactional(readOnly = false,rollbackFor = Exception.class)
 	@Override
 	public boolean batchImport(String fileName, MultipartFile file) throws Exception {
 		// 记录错误
